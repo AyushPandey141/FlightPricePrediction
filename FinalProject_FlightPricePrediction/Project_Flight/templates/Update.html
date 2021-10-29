@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="static\HOME.css">
+        <body class="background">
+            <div class="navi" style="margin-top:-20px;">
+                <ul>
+                <a href="Conclusion"><li style="padding:5px;">Conclusion</li></a>
+                <a href="table"><li style="padding:5px;">Table</li></a>
+                <a href="First"><li style="padding:5px;">Analysis</li></a>
+                <a href="Home"><li style="padding:5px;">About</li></a>
+                <a href="/"><li style="padding:5px;">Predict</li></a>
+                </ul>
+            </div>
+            <form method='POST' action="/Update">
+                    <center>
+                        <h2 style="margin-top:0px;background-color:bisque;padding:5px;">Flight Details</h2>
+                    </center>
+                    <p><b><i class="fa fa-plane"></i> Airline:<b>
+                        <select name="airline">
+                            {%for i in airline%}
+                            <option>{{i}}</option>
+                            {%endfor%}
+                        </select>
+                    </p>
+                    <p style="display:inline;"><b><i class="fas fa-city"></i> Source:</b>
+                        <select name="source">
+                            {%for i in source%}
+                            <option>{{i}}</option>
+                            {%endfor%}
+                        </select>
+                    </p>
+                    
+                    <p style="display:inline-block;"><b>Destination:</b>
+                        <select name="destination">
+                            {%for i in destination%}
+                            <option>{{i}}</option>
+                            {%endfor%}
+                        </select>
+                    </p>
+                    <p style="display:inline;"><b><i class="fa fa-stop"></i> Stops:</b>
+                        <select name="stops">
+                            {%for i in stops%}
+                            <option>{{i}}</option>
+                            {%endfor%}
+                        </select>
+                    </p>
+                    <p style="display:inline-block;margin-left:80px;"><b><i class="fa fa-inr"></i> Price:</b>
+                        <input type="text" size="10px" name="price" placeholder="Enter Price" required>
+                    </p>
+                    <p><b><i class="fa fa-calendar"></i> Departure(Date & Time):</b></label>
+                    <input type="datetime-local" name="departure" required></p>
+        
+                    <p><b><i class="fa fa-calendar"></i> Arrival(Date & Time):</b></label>
+                    <input type="datetime-local" name="arrival" required></p>
+                    <center>
+                        <br>
+                    <input type="submit" value="Insert" id="color" style="font-weight:bold;cursor:pointer;background-color:wheat;color:brown;font-size:20px;" onmouseover="change()" onmouseout="change1()"> 
+                    </center>
+                </form>
+        
+                <script>
+                    function change()
+                    {
+                        document.getElementById("color").style.color="Green";
+                    }
+                    function change1()
+                    {
+                        document.getElementById("color").style.color="Brown";
+                    }
+                </script>
+            </body>
+        </html>

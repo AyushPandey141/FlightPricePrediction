@@ -1,0 +1,26 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="static\HOME.css">
+<body class="background">
+    <div class="navi" style="margin-top:-20px;">
+        <ul>
+        <a href="Conclusion"><li style="padding:4px;">Conclusion</li></a>
+        <a href="table"><li style="padding:4px;">Table</li></a>
+        <a href="First"><li style="padding:4px;">Analysis</li></a>
+        <a href="Home"><li style="padding:4px;">About</li></a>
+        <a href="/"><li style="padding:4px;">Predict</li></a>
+        </ul>
+    </div>
+    <center>
+        <h1 style="text-align:center;margin-top:80px;">Prediction</h1>
+        <br><br>
+        {%if data[0]==0.0%}
+        <h1>The Flight Price is:Rs 0</h1>
+        {%else%}
+        <h1>The Flight Price is:Rs{{(data[0]).round(2)}}</h1>
+        {%endif%}
+        <h1></h1>
+        <a href="/">Go back to Home page</a>
+    </center>
+</body>
+
+</html>

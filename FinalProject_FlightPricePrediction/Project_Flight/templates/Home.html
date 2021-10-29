@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="static\HOME.css">
+    </head>
+    <body>
+        <div class="navi" style="margin-top:-20px;">
+            <ul>
+            <a href="Conclusion"><li style="padding:4px;">Conclusion</li></a>
+            <a href="table"><li style="padding:4px;">Table</li></a>
+            <a href="First"><li style="padding:4px;">Analysis</li></a>
+            <a href="Home"><li style="padding:4px;">About</li></a>
+            <a href="/"><li style="padding:4px;">Predict</li></a>
+            </ul>
+        </div>
+        <center>
+        <h1>Flight Fare Prediction Analysis</h1>
+        <h2>By:</h2>
+        <h1>Ayush Pandey</h1>
+        <h2>Email Id: <a href="mailto:1805290@kiit.ac.in?subject=Feedback&body=Message">1805290@kiit.ac.in</a></h2>
+        </center>
+        <br>
+        <h2 style="margin-left:20px;"><u>Abstract:</u></h2>
+        <p>Nowadays, airline ticket prices can vary dynamically and significantly for the same flight on different dates and can be sometime hard to guess the prices.</p>
+        <p>We might have often heard travellers saying that flight ticket prices are so unpredictable. So this project is to analyze the different factors that affect the prices
+        of the flight and to predict the price based on various parameters so that a person can get an idea of the prices and can decide whether to buy a ticket of that airline or not.</p>
+        <br><br>
+        <h2 style="margin-left:20px;"><u>About Data:</u></h2>
+        <p>The <a href="static/Flight_Prediction.csv" download>data set</a> consists of 10,683 records and 11 different features containing the data like the name of the airline, the date of journey, the source from which the service of the flight begins,
+             the destination where the service ends, route taken by the flight to reach the destination, the time when the journey starts from the source, time of arrival at the destination, total duration of the flight, total stops between the source and its destination,
+              more information about the flight, and the price of the ticket from the month of March to June.</p>
+        <br><br>
+        <h2 style="margin-left:20px;"><u>Approach:</u></h2>
+            <ul style="font-size:20px;font-family:'Glyphicons Halflings';margin:10px 25px 20px 25px;text-align:justify;">
+                <li> Various python libraries such as NumPy, Pandas, Matplotlib, Seaborn are used for the purpose of mathematical calculations, extraction and visualization of the data.</li>
+                <p/>
+                <li> The extracted dataset was found to have null values which are then effectively handled to achieve accurate analysis.</li>
+                <p/>
+                <li> Various different regression models was implemented to get the best prediction of the flight price and from that Random Forest Regression technique was selected as it had the best R-Squared score(measures the strength of the relationship between your model and the dependent variable on a convenient 0 – 100% scale).</li>
+            <ul>
+        <br>
+        <center>
+            <ul class="pagination">
+                <li><a href="/">Predict</a></li>
+                <li><a href="Home">About</a></li>
+                <li><a href="First">Analysis</a></li>
+                <li><a href="table">Table</a></li>
+                <li><a href="Conclusion">Conclusion</a></li>
+              </ul>
+        </center>
+    </body>
+</html>

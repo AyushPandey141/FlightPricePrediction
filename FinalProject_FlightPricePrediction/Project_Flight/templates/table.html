@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static\Home.css">
+        <body>
+            <div class="navi" style="margin-top:-20px;">
+                <ul>
+                <a href="Conclusion"><li style="padding:5px;">Conclusion</li></a>
+                <a href="Insert"><li style="padding:5px;">Add</li></a>
+                <a href="First"><li style="padding:5px;">Analysis</li></a>
+                <a href="Home"><li style="padding:5px;">About</li></a>
+                <a href="/"><li style="padding:5px;">Predict</li></a>
+                </ul>
+            </div>
+            <center>
+                <h1><u>Flight Info Table</u></h1>
+            <table width="100%" border="5px" style="background-color:#fffbcd;">
+                <tr style="background-color:rgba(0,0,0,0.15);">
+                    <th>
+                        Airline
+                    </th>
+                    <th>
+                        Source
+                    </th>
+                    <th>
+                        Destination
+                    </th>
+                    <th>
+                        Total_Stops
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Journey_Date
+                    </th>
+                    <th>
+                        Journey_Month
+                    </th>
+                    <th>
+                       Dep_Hour
+                    </th>
+                    <th>
+                        Dep_Min
+                    </th>
+                    <th>
+                        Arrival_Hour
+                    </th>
+                    <th>
+                        Arrival_Min
+                    </th>
+                    <th>
+                        Duration_Hour
+                    </th>
+                    <th>
+                        Duration_Min
+                    </th>
+                    
+                </tr>
+                {%for i in range(0,length)%}
+                <tr>
+                    <td value="{{i[0]}}">
+                        {{z[i][0]}}
+                    </td>
+
+                    <td value="{{i[1]}}">
+                        {{z[i][1]}}
+                    </td>
+                    <td value="{{i[2]}}">
+                        {{z[i][2]}}
+                    </td>
+                   <td value="{{i[3]}}">
+                        {{z[i][3]}}
+                    </td>
+                    <td value="{{i[4]}}">
+                        {{z[i][4]}}
+                    </td>
+
+                    <td value="{{i[5]}}">
+                        {{z[i][5]}}
+                    </td>
+                    <td value="{{i[6]}}">
+                        {{z[i][6]}}
+                    </td>
+                   <td value="{{i[7]}}">
+                        {{z[i][7]}}
+                    </td>
+                    <td value="{{i[8]}}">
+                        {{z[i][8]}}
+                    </td>
+
+                    <td value="{{i[9]}}">
+                        {{z[i][9]}}
+                    </td>
+                    <td value="{{i[10]}}">
+                        {{z[i][10]}}
+                    </td>
+                   <td value="{{i[11]}}">
+                        {{z[i][11]}}
+                    </td>
+                    <td value="{{i[12]}}">
+                        {{z[i][12]}}
+                    </td>
+
+                    <td value="{{i[13]}}">
+                        {{z[i][13]}}
+                    </td>
+            </tr>
+            {%endfor%}
+                
+            </table>
+            </center>
+        </body>
+    </head>
+    
+</html>

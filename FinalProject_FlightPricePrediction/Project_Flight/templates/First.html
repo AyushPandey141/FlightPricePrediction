@@ -1,0 +1,481 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static\HOME.css">
+    </head>    
+    <body bgcolor="wheat">
+        <div class="navi" style="margin-top:-20px;">
+            <ul>
+            <a href="Conclusion"><li style="padding:4px;">Conclusion</li></a>
+            <a href="table"><li style="padding:4px;">Table</li></a>
+            <a href="First"><li style="padding:4px;">Analysis</li></a>
+            <a href="Home"><li style="padding:4px;">About</li></a>
+            <a href="/"><li style="padding:4px;">Predict</li></a>
+            </ul>
+        </div>
+            <center>
+                <h1 style="font-size:40px;">Analysis And Visualization</h1>
+            </center>
+            <p/>
+            <ul>
+            <li> Data visualization is an important skill in applied statistics and machine learning.</li>
+            <p/>
+            <li> Statistics does indeed focus on quantitative descriptions and estimations of data. Data visualization provides an important suite of tools for gaining a qualitative understanding.</li>
+            <p/>
+            <li> This can be helpful when exploring and getting to know a dataset and can help with identifying patterns, corrupt data, outliers, and much more. With a little domain knowledge, data visualizations can be used to express and demonstrate key relationships in plots and charts.</li>
+            </p>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Type of Airlines along with their count</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To get the total count of each airline from the month March to June.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/AirlineCount.png" height="400px" width="400px">
+                <h3><b><u>Airlines and Their Count</u></b></h3>
+            </center>
+            <br>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul style="font-size:20px;font-family:'Glyphicons Halflings';margin:10px 25px 20px 25px;text-align:justify;">
+                <li> Jet Airways is the most preferred airline with the highest row count of 3,849 followed by Indigo (2,053) and AirIndia (1,751).</li>
+                <p/>
+                <li> Count for Vistara Premium economy, Trujet, Multiple carries premium economy and Jet airways business is quite low.</li>
+                <p/>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Graphical representation between the type of Airlines and Price</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul style="font-size:20px;font-family:'Glyphicons Halflings';margin:10px 25px 20px 25px;text-align:justify;">
+                <li> To plot a graph between type of Airlines and Price to make some useful inference.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/Airline_Price.png" height="400px" width="600px">
+                 <h3><b><u>Boxplot representation of each Airline</u></b></h3>
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Jet airways, Multiple carriers and Air India are full-service airlines and are always highly priced
+                     due to various facility they provide and other airlines have almost similar median with minimal fluctuations.</li>
+                <p/>
+                <li> Through this visualization the travellers can see the highest to lowest price and can  know the difference of prices in each airline.</li>
+            </ul>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Total number of flights that take off from each city</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To get the total count of flight that take off from each city.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/SourceCount.png" height="400px" width="400px">
+                <h3><b><u>Flights From each City</u></b></h3>
+            </center>
+            <br>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Majority of the flights take off from Delhi and from March to June total 4,536 flights have take off followed by Kolkata where more than 2,800 (2,871) flights have take off.</li>
+                <p/>
+                <li> Chennai has the minimum count of flight take off where from month March to June only 381 flights have take off.</li>
+                <p/>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Boxplot representation between the Flight Source and Price</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To plot a boxplot between the Flight Source and Price and to obtain useful inferences.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/Source_Price.png" height="400px" width="600px">
+                <h3><b><u>Boxplot representation of each Source</u></b></h3>
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> From the above visualization, the highest average value of flight fare is of Delhi followed by Kolkata.</li>
+                <p/>
+                <li> Outliners are present but we will not remove them as prices are affected by date of journey, source and total stops.</li>
+
+            </ul>
+            <br>
+            <br>
+            <hr>
+            <br>
+            
+            <center>
+                <h1>Number of flights going to each city</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To count the number of flights going to each city.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/DestinationCount.png" height="400px" width="400px">
+                <h3><b><u>Flights Going to each City</u></b></h3>
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Maximum flight land is in Cochin where more than 4,500 flight have landed followed by Bangalore with more than 2,800 (2,871) flight have landed in the month from March to June.</li>
+                <p/>
+                <li> Kolkata has the least rumber of receiving the flight where only 381 flights have landed in the month from March to June.</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Graphical representation of Flight Stopage along with their count</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To plot a countplot on the number of stops and to obtain some useful inferences.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/StopCount.png" height="400px" width="400px">
+                <h3><b><u>Stops and Thier Count</u></b></h3>
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Majority of the flights have one stop and from March to June total 5,625 flights have one stop between their start source and end source followed by Non-Stop flight with more than 3,490 flights which have no stopage between it’s source and destinaton.</li>
+                <p/>
+                <li> Flights with 4 stopage between its start souce and end source is 1 from the month of March to June followed by 3 stops with 45 flights which have 3 stopage between start source and destination source.</li>
+            </ul>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Boxplot representation between Total Stops and Price</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To plot a boxplot between the Total Stops and Price to obtain useful inferences.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/Stop_Price.png" height="400px" width="500px">
+                <h3><b><u>Boxplot representation of each Stop</u></b></h3>
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Airlines with 1 or 2 stops have many outliners and hence the price varies. On the contrary price for airline with 4 stops is not fluctuating.</li>
+                <p/>
+                <li> We will not remove the outliners as the flight prices are affected by the number of stops.</li>
+                
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Graphical result analysis between Month and count of flight</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To visualize the graph between the count of flight for each month.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/MonthCount.png" height="400px" width="400px">
+                <h3><b><u>Total Flights in each Month</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Flights in May and June are quite high with more than 3,400 flights which shows people travel more during holiday month.</li>
+                <p/>
+                <li> April has the lowest number of flights with less than 1,080 (1079) flights which shows people travel less in April.</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Graphical result analysis between Month and Price</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To plot a graph between the Month and Price to make some useful inferences.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/PriceMonth.png" height="400px" width="400px">
+                  <h3><b><u>Flight Price Each Month</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> The prices are higher in the month of March as people travel more, the company increases the expenses.</li>
+                <p/>
+                <li> Some airline company increase the price for the business purpose, so this analysis can help passengers to see which month is best to travel with affordable prices as from month to month price changes.</li>
+            </ul>
+            
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Graph between date of journey and their count</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To plot a graph between the journey date and their count.</li>
+                <p/>
+                <li> The journey day plays an important role in price as the flight fare for weekdays might be lesser and for weekends the price might be higher based on the offers and airlines chosen to board the flight.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/JourneyCount.png" height="400px" width="400px">
+                  <h3><b><u>Total Flights each Day</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> From the above visulaization, the maximum count of flight is on 9th with 1,406 flights followed by 6th with 1,287 flights.</li>
+                <p/>
+                <li> The distribution of the number of flight is almost similar for all dates.</li>
+            </ul>
+            
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Graphical result analysis between the Journey Date and Price</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To plot a graph between Date and Price to make some useful inferences.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/Date_Price.png" height="400px" width="400px">
+                  <h3><b><u>Price of Flight each Day</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> From the above visualization, flight prices at the start of the month are a bit high as compared to the end date and also the prices increases as the date of booking is near to the date of journey.</li>
+                <p/>
+                <li> The journey date plays an important role in price as the flight charges for weekdays might be lesser and for weekends the price might be higher based on the offers and airlines chosen to board the flight.</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+            <center>
+            <h1>Relationship between the Journey date, Journey Month and Departure Hour</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To check whether the columns Journey date, Journey Month and Departure Hour are dependent or independent with the help of one-way Anova test.</li>
+                <p/>
+                <li> Null Hypothesis-> The three columns Journey date, Journey Month and Departure Hour are co-reated that is dependent.</li>
+                <p/>
+                <li> Alternate Hypothesis-> The three columns Journey date, Journey Month and Departure Hour are independent of each other.</li>
+                <p/>
+                <li> Level of Significance (Is the probability of rejecting the null hypothesis when it is true.) as 0.05. A significance level of 0.05 indicates a 5% risk of concluding that a difference exists when there is no actual difference.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <br>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> The p value is 5.39e-90 and since the p-value (5.39e-90) of our experiment is less than the level of significance(0.05) so we will reject the null hypothesis
+                     and accept the alternate hypothesis that is the three columns Journey date,Journey Month and Departure Hour are independent of each other.</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+
+            <center>
+                <h1>Relationship between the Arrival Hour, Arrival Minute and Duration Hour</h1>
+                </center>
+                <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+                <ul>
+                    <li> To check whether the columns Arrival Hour, Arrival Minute and Duration Hour are dependent or independent with the help of one-way Anova test.</li>
+                    <p/>
+                    <li> Null Hypothesis->The three columns Arrival Hour, Arrival Minute and Duration Hour are co-reated that is dependent.</li>
+                    <p/>
+                    <li> Alternate Hypothesis->The three columns Arrival Hour, Arrival Minute and Duration Hour are independent of each other.</li>
+                    <p/>
+                    <li> Level of Significance (Is the probability of rejecting the null hypothesis when it is true.) as 0.05. A significance level of 0.05 indicates a 5% risk of concluding that a difference exists when there is no actual difference.</li>
+                    <p/>
+                </ul>
+                <p/>
+                <p/>
+                <br>
+                <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+                <ul>
+                    <li> The p value is 0.0 and since the p-value (0.0) of our experiment is less than the level of significance(0.05) so
+                        we will reject the null hypothesis and accept the alternate hypothesis that is the three columns Arrival Hour,Arrival Minute and Departure Hour are independent of each other.</li>
+                </ul>
+    
+                <br>
+                <hr>
+                <br>
+            <center>
+                <h1>Pearson correlation between the Price and the total duration</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To find out the association between the two variables( Price and Total Duration) pearson correlation coefficient is used to find out how strong is the relationship between the two variables.</li>
+                <p/>
+                <li> Null Hypothesis->The independent column that is Duration_Hour is not correlated with the target column that is Price.</li>
+                <p/>
+                <li> Alternate Hypothesis->The independent column that is Duration_Hour is correlated with the target column that is Price.</li>
+                <p/>
+                <li> Level of Significance (Is the probability of rejecting the null hypothesis when it is true.) as 0.05. A significance level of 0.05 indicates a 5% risk of concluding that a difference exists when there is no actual difference.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/DurationPrice.png" height="400px" width="400px">
+                  <h3><b><u>Price vs Duration of Flight Scatter Plot</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> The p-value is 0.0 an since the p-value(0.0) is less than the level of significance(0.05) we reject the Null Hypothesis and accept the Alternate Hypothesis that is the target column (Price) and the
+                     independent column (Duration_Hour) are correlated as pearson coefficient is 0.51 which means moderately correlated. This shows that the time duration plays an important role in affecting the price of the flight.</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Pearson correlation between the Price and the Total Stops</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To find out the association between the two variables( Price and Total Stops),pearson correlation coefficient is used to find out how strong is the relationship between the two variables.</li>
+                <p/>
+                <li> Null Hypothesis->The independent column that is Total_Stops is not correlated with the target column that is Price.</li>
+                <p/>  
+                <li> Alternate Hypothesis->The independent column that is Total_Stops is correlated with the target column that is Price.</li>
+                <p/>
+                <li> Level of Significance (Is the probability of rejecting the null hypothesis when it is true.) as 0.05. A significance level of 0.05 indicates a 5% risk of concluding that a difference exists when there is no actual difference.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/FactorsPrice.png" height="400px" width="400px">
+                  <h3><b><u>Main Factors Affecting The Price Of Flight</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> The p-value is 0.0 an since the p-value (0.0) is less than the level of significance(0.05) we reject the Null Hypothesis and accept the Alternate Hypothesis
+                     that is the target column (Price) and the independent column (Total_Stops) are correlated as pearson coefficient is 0.604 which means moderately correlated. This shows that the ‘stops’ plays
+                     an important role in affecting the price of the flight.</li>
+                <p/>
+                <li> And from the above visualization it is confirmed that the price of the flight are dependent on the total number of stops.</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Distribution of the Price column</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> To obtain the maximum, minimum price of the flight along with its distribution..</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <div class="container">
+                    <img src="static/PriceSkewed.png" height="400px" width="400px">
+                    
+                  </div>
+                  <div class="container">
+                    <img class="middle-img" src="static/PriceBoxPlot.png" height="400px" width="400px">
+                    
+                  </div>
+                  <h3><b><u>Distribution of Price Column</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Maximum price flight is Rs 79,512 and minimum price flight is Rs 1,759. Majority of the flights have price range between 1,759-20,000 and the number of flights having price greater than 20,0000 are quite less.</li>
+                <p/>
+                <li> From the above visualization (Figure 1) , it is clear that the Price range is skewed toward right.</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+            <center>
+                <h1>Random Forest Regression Technique for Prediction</h1>
+            </center>
+            <h2 style="margin-left:20px;"><u>Purpose:</u></h2>
+            <ul>
+                <li> Random forest regression is a supervised learning algorithm. The benefit of the random forest is, it very well may be utilized for both characterization
+                     and relapse issue which structure most of current machine learning framework. Random forest forms numerous decision trees, whats more, adds them together to get an increasingly
+                     exact and stable expectation. Random Forest has nearly the equivalent parameters as a decision tree or a stowing classifier model. It is very simple to discover the significance of each element on the expectation when contrasted with others in this calculation.</li>
+                <p/>
+            </ul>
+            <p/>
+            <p/>
+            <center>
+                <img src="static/Predicted_Actual.png" height="400px" width="400px">
+                  <h3><b><u>Actual and Predicted Price Difference Graph</u></b></h3>
+            
+            </center>
+            <h2 style="margin-left:20px;"><u>Inference:</u></h2>
+            <ul>
+                <li> Random Forest model has the best accuracy in predicting the price of the flight with the help of different features with an R-Squared score (It is a statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable or variables in a regression model) of above 85% (85.44%).</li>
+                <p/>
+                <li> From the above visualization, the difference in the actual price and the predicted price of flight is forming a bell curve as most of the values are present in the range of -5000 to +5000.</li>
+                <p/>
+                <li> Mean Absolute error for this model is around 1,119 and root mean square error is 1,790. Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) are metrics used to evaluate a Regression Model. These metrics tell us how accurate our predictions are and, 
+                    what is the amount of deviation from the actual values.RMSE is the Root of the Mean of the Square of Errors and MAE is the Mean of Absolute value of Errors.</li>
+            </ul>
+    </body>
+</html>
